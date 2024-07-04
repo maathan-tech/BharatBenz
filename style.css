@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+  .head{
+    background: #a70e13;
+    font-family: GOTH720N_4, Arial, Helvetica, sans-serif;
+    
+    font-size: small;
+    font-weight: 600;
+    
+
+    }
+    nav{
+      font-family: GOTH720N_4, Arial, Helvetica, sans-serif;
+      font-size: small;
+      
+    }
+    @media screen and (max-width:768px){
+      .navbar-toggler{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      .head-left,.head-right{
+        display: none;
+      }
+    }
+ @media screen and (min-width:768px) {
+  .head-sm{
+    display:none;
+  }
+  
+ }
+ 
+ .carousel .carousel-indicators button {
+  width: 10px;
+ height: 10px;
+ border-radius: 100%;
+}
+.carousel-inner p{
+  font-family: GOTH720N_4, Arial, Helvetica, sans-serif;
+}
+
+
+
+.carousel-item {
+  
+  
+  align-items: center;
+  justify-content: center;
+  height: 70vh; /* Full viewport height for demonstration */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.sidebar-flex{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+@media (max-width: 767px) {
+  .carousel-item {
+      height: 700px; /* Adjust this value to your desired height */
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 50%;
+    object-fit: fill;
+    margin-top: 20px;
+  }
+  
+  .carousel-caption p{
+    text-align: start;
+    
+  }
+ 
+}
+.content{
+  background: black ;
+}
+.sidebar{
+  position: fixed;
+  right: 0;
+  top: 25%;
+  flex-direction: column;
+  z-index: 1;
+  
+}
+.sidebar-flex{
+  flex-direction: column !important;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 94vh;
+
+    /* scale: 1.5; */
+    /* flex-direction: row; */
+    height: 100px;
+    width: 100%;
+
+  }
+  .sidebar-flex{
+    flex-direction: row !important;
+    width: 100%;
+    justify-content: center;
+  }
+}
+.trucks-buses{
+  font-family: GOTH720N_4, Arial, Helvetica, sans-serif;
+}
+.card-title {
+  font-size: 90px;
+  font-weight: bold;
+  
+}
+.custom-select-white-arrow {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  border-bottom: 2px solid #000; /* Adjust the color and width as needed */
+  border-radius: 0; /* Remove rounded corners */
+  box-shadow: none; /* Remove any shadow */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.1 7.1"><path fill="white" d="M2.1,7.1L0,4.9L0.3,4.6L2.1,6.5l1.7-1.9L4.1,4.9L2.1,7.1z"/></svg>') no-repeat right 10px center;
+  background-color: #fff; /* Background color for the select box */
+}
+.custom-select-white-arrow:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #007bff; /* Change border color on focus */
+}
+/* Remove the default arrow in some browsers */
+select::-ms-expand {
+  display: none;
+}
+
+.service{
+  font-family: GOTH720N_4, Arial, Helvetica, sans-serif;
+}
+.testimonials{
+  font-family: GOTH720N_4, Arial, Helvetica, sans-serif;
+}
+.quick-view{
+  font-family: gothic725blackbt2, Arial, Helvetica, sans-serif;
+}
+.quick-view ul{
+  list-style: none;
+}
+@media screen and (max-width:576px){
+ .exchange button{
+  width: 100px;
+ }
+}
